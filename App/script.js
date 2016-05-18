@@ -31,10 +31,18 @@ $(document).ready(function() {
 
         //console.log(data._links.self.substring(data._links.self.lastIndexOf('/')+1));
         var channelName = data._links.self.substring(data._links.self.lastIndexOf('/')+1);
-
         var gameDescrip = returnGame(data.stream);
+        var streamerUrl = "https://twitch.tv/" + name;
 
-        $('#link-output').append("<h1>" + channelName + "</h1> <h3>" + gameDescrip + "</h3><br>");
+
+        //$('#link-output').append("<h1 id='channel-name'>" +
+        //channelName + "</h1> <h4 id='channel-description'>" +
+        //gameDescrip + "</h4><br>");
+
+        $('#link-output').append("<div class='row jumbotron'><div class='col-md-0'></div><div class = ' text-center col-md-2'><a href= "+  streamerUrl +" target='_blank'>" +
+        "<strong>" + channelName + "</strong>"+"</a>" + "</div><div class=' text-center col-md-8'>" +gameDescrip + "</div></div><br>") ;
+
+
 
       }
     });
