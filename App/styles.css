@@ -1,13 +1,10 @@
-
-@import url(https://fonts.googleapis.com/css?family=Niconne|Cantarell|Akronim);
+body{
+  background-color: 	#c5d0d4;
+}
 #custom-search-input {
     margin: 0;
     margin-top: 10px;
     padding: 0;
-}
-
-body{
-  background: white;
 }
 #custom-search-input .search-query {
     padding-right: 3px;
@@ -38,14 +35,14 @@ body{
 .search-query:focus + button {
     z-index: 3;
 }
-
-
-.jumbotron {
-   background: rgb(173, 216, 230); /* This is for ie8 and below */
-   background: rgba(173, 216, 230, 0.5);
+#output{
+  background-color: #9dcac5;
 }
 
+#logo{
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
 
-#channel-description{
-  font-family: Cantarell;
 }
